@@ -1,0 +1,307 @@
+:root {
+    --theme-color: #FFEA2B
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Actor", sans-serif;
+    background-color: rgb(90, 255, 255);
+}
+
+
+a {
+    color: var(--theme-color);
+}
+
+a:hover {
+    color: #777;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.first {
+    position: relative;
+    right: 20%;
+}
+
+.second {
+    position: relative;
+    left: 20%;
+}
+
+.third {
+    position: relative;
+    right: 20%;
+}
+
+img:hover {
+    transform: scale(150%);
+}
+
+.main-circle:hover {
+    transform: scale(120%);
+}
+
+nav {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    background-color: black;
+    color: var(--theme-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 4px solid var(--theme-color);
+    z-index: 2;
+}
+
+.filler {
+    height: 100px;
+}
+
+nav p {
+    font-size: 25px;
+    margin-left: 20px;
+    font-family: "Climate Crisis", sans-serif;
+    letter-spacing: 1px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+footer {
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    border-top: 4px solid var(--theme-color);
+    display: flex;
+    flex-direction: column;
+    color: yellow;
+    gap: 15px;
+    align-items: center;
+    font-family: "Climate Crisis", "Actor", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+
+footer .links {
+    margin-top: -10px;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    margin: 0;
+    border-color: var(--theme-color);
+    width: 80vw;
+}
+
+footer img {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border: none;
+    width: 80px;
+    height: 80px;
+}
+
+footer img:hover {
+    transform: none;
+}
+
+.main-circle {
+    width: 500px;
+    height: 500px;
+    background-color: var(--theme-color);
+    border-radius: 50%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1;
+}
+
+h1 {
+    margin-top: 35px;
+    text-align: center;
+    font-family: "Dela Gothic One", sans-serif;
+    margin-bottom: 0px;
+}
+
+.separator {
+    border: 1px solid black;
+    width: 300px;
+    margin: 0px auto;
+}
+
+.main-circle p {
+    text-align: center;
+    width: 90%;
+    position: relative;
+    top: 15%;
+    margin: 0px auto;
+    font-size: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 10px solid var(--theme-color);
+    object-fit: cover;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 2000px) {
+
+    img:hover {
+        transform: scale(130%);
+    }
+
+    .main-circle:hover {
+        transform: scale(120%);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .first {
+        position: relative;
+        right: 15%;
+    }
+    
+    .second {
+        position: relative;
+        left: 15%;
+    }
+    
+    .third {
+        position: relative;
+        right: 15%;
+    }
+
+    img:hover {
+        transform: scale(110%);
+    }
+
+    .main-circle:hover {
+        transform: scale(120%);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .first {
+        position: relative;
+        right: 5%;
+    }
+    
+    .second {
+        position: relative;
+        left: 5%;
+    }
+    
+    .third {
+        position: relative;
+        right: 5%;
+    }
+
+
+    img:hover {
+        transform: scale(110%);
+    }
+
+    .main-circle:hover {
+        transform: scale(110%);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .first {
+        position: static;
+    }
+
+    .second {
+        position: static;
+    }
+
+    .third {
+        position: static;
+    }
+
+    nav p {
+        margin: 0;
+    }
+
+    .links {
+        margin: 0;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        height: 100px;
+    }
+
+    .main-circle {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .main-circle p {
+        font-size: 20px;
+        margin-top: -35px;
+        width: 80%;
+    }
+
+    .separator {
+        width: 50vw;
+    }
+
+    .images {
+        justify-content: center;
+    }
+
+    img {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    img:hover {
+        transform: none;
+    }
+
+    .main-circle:hover {
+        transform: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main-circle p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .main-circle p {
+        font-size: 16px;
+    }
+}
