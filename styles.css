@@ -1,5 +1,5 @@
 :root {
-    --theme-color: #FFEA2B
+    --theme-color: #ffd24a
 }
 
 body {
@@ -7,7 +7,7 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: "Actor", sans-serif;
-    background-color: rgb(90, 255, 255);
+    background-color: #81d6e6;
 }
 
 a {
@@ -53,7 +53,7 @@ nav {
     position: fixed;
     width: 100vw;
     top: 0;
-    background-color: black;
+    background-color: #2d3673;
     color: var(--theme-color);
     display: flex;
     flex-direction: row;
@@ -85,11 +85,11 @@ nav p {
 footer {
     height: 300px;
     width: 100%;
-    background-color: black;
+    background-color: #2d3673;
     border-top: 4px solid var(--theme-color);
     display: flex;
     flex-direction: column;
-    color: yellow;
+    color: var(--theme-color);
     gap: 15px;
     align-items: center;
     font-family: "Climate Crisis", "Actor", sans-serif;
