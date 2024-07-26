@@ -139,15 +139,17 @@ h1 {
     text-align: center;
     font-family: "Dela Gothic One", sans-serif;
     margin-bottom: 0px;
+    color: #2d3673;
 }
 
 .separator {
-    border: 1px solid black;
+    border: 1px solid #2d3673;
     width: 300px;
     margin: 0px auto;
 }
 
 .main-circle p {
+    color: #2d3673;
     text-align: center;
     width: 90%;
     position: relative;
