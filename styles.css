@@ -16,6 +16,7 @@ a {
 
 a:hover {
     color: #777;
+    transition: color 75ms linear;
 }
 
 .images {
@@ -43,10 +44,12 @@ a:hover {
 
 img:hover {
     transform: scale(150%);
+    transition: transform 75ms linear;
 }
 
 .main-circle:hover {
     transform: scale(120%);
+    transition: transform 75ms linear;
 }
 
 nav {
